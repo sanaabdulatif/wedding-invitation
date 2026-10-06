@@ -57,9 +57,9 @@ export const weddingData: WeddingConfig = {
     mother: "Ayisha",
   },
 
-  // October 3, 2026 at 10:00 AM
-  weddingDate: "2026-10-03T10:00:00",
-  weddingDateFormatted: "October 3, 2026",
+  // October 24, 2026 at 10:00 AM
+  weddingDate: "2026-10-24T10:00:00",
+  weddingDateFormatted: "October 24, 2026",
 
   venue: {
     name: "The Royal Grand Palace & Convention Center",
@@ -89,8 +89,8 @@ export const weddingData: WeddingConfig = {
     {
       id: "haldi",
       title: "HALDI",
-      date: "October 1",
-      fullDate: "Thursday, October 1, 2026",
+      date: "October 22",
+      fullDate: "Thursday, October 22, 2026",
       time: "Evening (5:30 PM)",
       description: "A vibrant ceremony of love, golden turmeric blessings, and joyful laughter.",
       location: "Bridal Residence Garden",
@@ -99,8 +99,8 @@ export const weddingData: WeddingConfig = {
     {
       id: "mehendi",
       title: "MEHENDI",
-      date: "October 2",
-      fullDate: "Friday, October 2, 2026",
+      date: "October 23",
+      fullDate: "Friday, October 23, 2026",
       time: "Night (7:00 PM)",
       description: "An enchanting evening filled with delicate henna, music, food, and celebration.",
       location: "Royal Heritage Courtyard",
@@ -109,8 +109,8 @@ export const weddingData: WeddingConfig = {
     {
       id: "nikkah",
       title: "NIKKAH",
-      date: "October 3",
-      fullDate: "Saturday, October 3, 2026",
+      date: "October 24",
+      fullDate: "Saturday, October 24, 2026",
       time: "10:00 AM",
       description: "The solemn and sacred matrimony solemnization under divine blessings.",
       location: "The Royal Grand Auditorium",
@@ -119,8 +119,8 @@ export const weddingData: WeddingConfig = {
     {
       id: "reception",
       title: "RECEPTION",
-      date: "October 3",
-      fullDate: "Saturday, October 3, 2026",
+      date: "October 24",
+      fullDate: "Saturday, October 24, 2026",
       time: "1:00 PM",
       description: "A grand royal feast & joyous gathering to celebrate the newly married couple.",
       location: "The Grand Ballroom",

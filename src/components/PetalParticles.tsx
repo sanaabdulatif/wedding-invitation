@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface FallingHeart {
   x: number;
@@ -15,6 +15,16 @@ interface FallingHeart {
 
 export function PetalParticles() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const [showSparkles, setShowSparkles] = useState(false);
+
+  useEffect(() => {
+    // Delay sparkling effect by 1 second after page opens
+    const timer = setTimeout(() => {
+      setShowSparkles(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -114,7 +124,9 @@ export function PetalParticles() {
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none fixed inset-0 z-15 opacity-80"
+      className={`pointer-events-none fixed inset-0 z-15 transition-opacity duration-1000 ease-out ${
+        showSparkles ? 'opacity-80' : 'opacity-0'
+      }`}
     />
   );
 }

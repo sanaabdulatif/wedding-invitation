@@ -14,63 +14,61 @@ export function HeroSection() {
 
         {/* Top Tagline */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-4"
         >
           <span className="font-serif-heading text-xs sm:text-sm tracking-[0.35em] text-[#C9A24A] uppercase font-semibold">
-            WE'RE GETTING MARRIED
+            TOGETHER WITH THEIR FAMILIES
           </span>
-          <div className="w-24 h-px bg-gradient-to-r from-transparent via-[#C9A24A] to-transparent mx-auto mt-3" />
+          <div className="w-24 h-px bg-gradient-to-r from-transparent via-[#C9A24A] to-transparent mx-auto mt-2" />
+          <span className="block mt-2 font-serif-body text-xs text-[#F3E7C3] tracking-[0.2em] uppercase">
+            INVITE YOU TO CELEBRATE THE WEDDING OF
+          </span>
         </motion.div>
 
         {/* Bride Name */}
         <motion.h1
-          initial={{ opacity: 0, scale: 0.9, y: 30 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, delay: 0.4 }}
-          className="font-serif-title text-5xl sm:text-7xl font-bold tracking-wide text-[#FFF8F2] drop-shadow-lg"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-serif-title text-5xl sm:text-7xl font-bold tracking-wide gold-gradient-text drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
         >
           {weddingData.brideName}
         </motion.h1>
 
         {/* Ampersand */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="my-3 font-cursive text-4xl sm:text-5xl text-[#C9A24A]"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="my-2 font-cursive text-4xl sm:text-5xl text-[#C9A24A] drop-shadow-md"
         >
           &
         </motion.div>
 
         {/* Groom Name */}
         <motion.h1
-          initial={{ opacity: 0, scale: 0.9, y: 30 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, delay: 1 }}
-          className="font-serif-title text-5xl sm:text-7xl font-bold tracking-wide text-[#FFF8F2] drop-shadow-lg"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="font-serif-title text-5xl sm:text-7xl font-bold tracking-wide gold-gradient-text drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]"
         >
           {weddingData.groomName}
         </motion.h1>
 
         {/* Date Subheading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 1.3 }}
-          className="mt-8 pt-6 border-t border-[#C9A24A]/30 w-full flex flex-col items-center gap-1"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-6 pt-5 border-t border-[#C9A24A]/40 w-full flex flex-col items-center gap-1"
         >
           <span className="font-serif-body text-lg sm:text-xl text-[#F3E7C3] tracking-widest uppercase">
             {weddingData.weddingDateFormatted}
           </span>
-          <span className="font-sans-clean text-xs text-[#C9A24A] tracking-widest uppercase">
+          <span className="font-sans-clean text-xs text-[#C9A24A] tracking-widest uppercase font-medium">
             Kozhikode, Kerala
           </span>
         </motion.div>

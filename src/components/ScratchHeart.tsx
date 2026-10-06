@@ -226,7 +226,7 @@ export function ScratchHeart() {
           </span>
           
           <h3 className="font-serif-title text-3xl sm:text-4xl font-bold text-[#FFF8F2] my-1 gold-gradient-text tracking-wide">
-            OCTOBER 3
+            OCTOBER 24
           </h3>
           
           <span className="font-serif-body text-xl sm:text-2xl text-[#F3E7C3] italic">

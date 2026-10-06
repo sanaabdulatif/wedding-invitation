@@ -58,18 +58,16 @@ export function App() {
       <CurtainIntro isOpen={isCurtainOpen} onOpen={handleCurtainOpen} onStartMusic={handleStartMusic} />
 
       {/* Continuous Vertical Scroll Container */}
-      {isCurtainOpen && (
-        <main className="relative z-10 w-full flex flex-col items-center overflow-x-hidden scroll-smooth">
-          <HeroSection />
-          <ParentsSection />
-          <InvitationMessage />
-          <ScratchHeart />
-          <Countdown />
-          <VenueSection />
-          <PreWeddingPlans />
-          <CoupleFinalAnimation />
-        </main>
-      )}
+      <main className="relative z-10 w-full flex flex-col items-center overflow-x-hidden scroll-smooth">
+        <HeroSection />
+        <ParentsSection />
+        <InvitationMessage />
+        <ScratchHeart />
+        <Countdown />
+        <VenueSection />
+        <PreWeddingPlans />
+        <CoupleFinalAnimation />
+      </main>
 
       {/* Background Music Player */}
       <MusicControl autoStartTrigger={shouldPlayMusic} />
