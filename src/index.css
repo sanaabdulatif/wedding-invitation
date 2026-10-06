@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-burgundy: #A3302E;
+    --color-deep-burgundy: #6E1C1B;
+    --color-dark-wine: #5C1716;
+    --color-burgundy-accent: #B83A38;
+    --color-soft-burgundy: #8B2625;
+    --color-cream: #FFF8F2;
+    --color-warm-beige: #F3E7DF;
+    --color-white: #FFFFFF;
+    --color-gold: #C9A24A;
+    --color-soft-gold: #F3E7C3;
+    --color-text-dark: #4A1010;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+}
+
+.font-serif-heading {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif-body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-cursive {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-sans-clean {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Luxury Shimmer & Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F3E7C3 0%, #C9A24A 50%, #E6C575 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C9A24A 0%, #E6C575 50%, #9B7829 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px rgba(201, 162, 74, 0.3), inset 0 0 15px rgba(201, 162, 74, 0.18);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #5C1716;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3302E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A24A;
+}
+
+/* Velvet Curtain Texture Effect in Rich Brick Red */
+.curtain-texture {
+  background-color: #6E1C1B;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(184, 58, 56, 0.55) 0%, rgba(74, 16, 16, 0.95) 100%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0px, transparent 20px, rgba(255, 255, 255, 0.08) 40px, rgba(0, 0, 0, 0.45) 60px);
+}
+
+/* Fine Paper / Linen Grain in Brick Red */
+.paper-texture {
+  background-color: #6E1C1B;
+  background-image: radial-gradient(rgba(201, 162, 74, 0.12) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Shimmer animation */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(90deg, #B83A38 0%, #C9A24A 50%, #B83A38 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 4s infinite linear;
+}
+
